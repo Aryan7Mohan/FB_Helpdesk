@@ -130,13 +130,16 @@
           function (response) {
             if (response && !response.error) {
               console.log(response);
-              window.location = "";
+
+              const div = document.getElementById("response");
+              div.innerHTML = `Profile details:<br>
+              full name: ${response.name}<br>email: ${response.email}`;
             }
           }
         );
       }
     </script>
-
+    <div id="response"></div>
     <div id="fb-root"></div>
     <script
       async
