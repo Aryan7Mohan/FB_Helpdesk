@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+
+    <style>
+      /* Bordered form */
+      body {
+        background: #004d95;
+        font-family: "Open Sans", sans-serif;
+        font-family: "Poppins", sans-serif;
+      }
+
+      form {
+        border: 3px solid #f1f1f1;
+      }
+
+      /* Full-width inputs */
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+      }
+
+      /* Set a style for all buttons */
+      button {
+        background-color: #004e95;
+        color: white;
+        padding: 14px 20px;
+        display: block;
+        border-radius: 4px;
+
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      /* Add a hover effect for buttons */
+      button:hover {
+        opacity: 0.8;
+      }
+
+      /* Add padding to containers */
+      .container {
+        padding: 16px;
+        margin: auto;
+        width: 25%;
+        display: block;
+        background: #fefefe;
+        border-radius: 10px;
+        margin-top: 20vh;
+      }
+
+      .contents {
+        margin: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contents">
+        <form action="/register" method="POST">
+          <h2 style="text-align: center; margin-top: -20px">Sign-Up</h2>
+          <label for="uname">Username</label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw">Password</label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit" value="Submit" class="btn">Sign-Up</button>
+        </form>
+        <span class="psw"
+          ><a href="/" style="text-decoration: none"
+            >Go back to login page</a
+          ></span
+        >
+      </div>
+    </div>
+  </body>
+</html>
